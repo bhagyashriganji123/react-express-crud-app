@@ -65,7 +65,7 @@ const Home = () => {
                     <td>{user.email}</td>
                     <td>{user.gender}</td>
                     <td>{user.phone}</td>
-                    <td><Link to='/' className='btn btn-warning ms-2'>Edit</Link>
+                    <td><Link to={`/editUser/${user.id}`} className='btn btn-warning ms-2'>Edit</Link>
                     <button type='submit' onClick={()=>handleDelete(user)} className='btn btn-danger ms-2'>Delete</button></td>
                   </tr>
                 )
